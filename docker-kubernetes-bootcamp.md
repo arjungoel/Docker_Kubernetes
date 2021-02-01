@@ -2,10 +2,10 @@
 
 
 - `Docker` is a tool for running applications in an isolated environment.
-- It is very similar to Virtual Machine.
-- App runs in same environment.
-- Just works
-- It is a standard for software deployment.
+    * It is very similar to Virtual Machine.
+    * App runs in same environment.
+    * Just works
+    * It is a standard for software deployment.
 
 
                                         Containers vs Virtual Machines:
