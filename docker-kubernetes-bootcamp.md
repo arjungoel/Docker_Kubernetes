@@ -7,9 +7,8 @@
 - Just works
 - It is a standard for software deployment.
 
-================================
-Containers vs Virtual Machines:
-================================
+
+                                        Containers vs Virtual Machines:
 
 - `Containers` are an abstraction at the application layer that packages `code` and `dependencies` together.
 - Multiple containers can run on the same machine and share the OS kernel with other containers, each running as isolated processes in user space.
@@ -21,9 +20,8 @@ A Container doesn't require a full OS. It simply shares the underlying OS but ru
 - Each VM includes a full copy of an OS, the application, necessary binaries and libraries - taking up 10s of GBs.
 - VMs can also be slow to boot.
 
-=========================
-Installation of Docker:
-=========================
+
+				        Installation of Docker:
 
 
 1. Open link https://docs.docker.com/ and click the `Download and Install` option. There will be different options for download for different OS (Linux, MacOS, Windows).
@@ -33,8 +31,7 @@ Desktop` is the newer way.
 4. You can simply run command `docker` on terminal (CMD, Terminal, Git Bash) to get the list of different commands for docker.
 
 
-You can stop the docker desktop by right-clicking on the icon and select quick `docker desktop` and after that when you run the command `docker ps` it will not able to connect with docker. On Windows the error will come like this: 
+You can stop the docker desktop by right-clicking on the icon and select quick `docker desktop` and after that when you run the command `docker ps` it will not able to connect with docker. On Windows you will get the following error:
 
-================================================================================================================================================================================================
-"error during connect: Get http://%2F%2F.%2Fpipe%2Fdocker_engine/v1.40/containers/json: open //./pipe/docker_engine: The system cannot find the file specified. In the default daemon configuration on Windows, the docker client must be run elevated to connect. This error may also indicate that the docker daemon is not running."
-================================================================================================================================================================================================
+> "error during connect: Get http://%2F%2F.%2Fpipe%2Fdocker_engine/v1.40/containers/json: open //./pipe/docker_engine: The system cannot find the file specified. In the default daemon configuration on Windows, the docker client must be run elevated to connect. This error may also indicate that the docker daemon is not running."
+
