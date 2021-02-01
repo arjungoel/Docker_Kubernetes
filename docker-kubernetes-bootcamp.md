@@ -20,6 +20,9 @@ A Container doesn't require a full OS. It simply shares the underlying OS but ru
 - Each VM includes a full copy of an OS, the application, necessary binaries and libraries - taking up 10s of GBs.
 - VMs can also be slow to boot.
 
+				![](assets/containers_vs_vms.PNG)
+
+
 
 				        Installation of Docker:
 
