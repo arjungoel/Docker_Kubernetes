@@ -1,0 +1,30 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: demo5-service
+spec:
+  selector:
+    app: demo5-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo5-deploy
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: demo5-app
+  template:
+    metadata:
+      labels:
+        app: demo5-app
+    spec:
+      containers:
+      - name: demo5-ctr
+        image: nginx

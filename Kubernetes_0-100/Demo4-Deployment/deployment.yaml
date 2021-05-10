@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo4-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: demo4-deployment-app
+  template:
+    metadata:
+      labels:
+        app: demo4-deployment-app
+    spec:
+      containers:
+        - name: demo4-deployment-container
+          image: busybox
+          command: ["sh", "-c", "echo This is a demo number 4! && sleep 60"]

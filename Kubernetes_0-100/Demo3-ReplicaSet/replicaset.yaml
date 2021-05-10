@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: demo3-replica
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: demo3-replica-app
+  template:
+    metadata:
+      labels:
+        app: demo3-replica-app
+    spec:
+      containers:
+        - name: demo3-replica-container
+          image: busybox
+          command: ["sh", "-c", "echo Hello Kubernetes! && sleep 60"]
